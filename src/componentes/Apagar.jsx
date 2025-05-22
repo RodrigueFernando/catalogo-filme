@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import useItemById from './userItemById'; // Certifique-se de que o hook está correto
+import useItemById from './userItemById'; 
 
 function Apagar() {
     const { id: idFromUrl } = useParams();
@@ -43,7 +43,7 @@ function Apagar() {
         navigate('/');
     };
 
-    // 🔍 Tela inicial ou erro
+    //  Tela inicial ou erro
     if (pageStatus === 'inicial' || pageStatus === 'nao-encontrado' || pageStatus === 'erro') {
         let mensagem = '';
         if (pageStatus === 'nao-encontrado') {
@@ -115,11 +115,11 @@ function Apagar() {
                         <label>Ano</label>
                         <input
                             type="number"
-                            name="anos" // ou "ano", dependendo do nome real no backend
-                            value={filme.anos || ''} // ou filme.ano
+                            name="ano"
+                            value={filme.ano || ''} 
                             onChange={handleChange}
                             className="form-control"
-                            required
+                          
                         />
                     </div>
 

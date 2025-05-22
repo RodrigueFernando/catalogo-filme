@@ -37,7 +37,7 @@ function Ler() {
       <p><strong>ID:</strong> {filme.id}</p>
       <p><strong>Nome:</strong> {filme.nome}</p> 
       <p><strong>Gênero:</strong> {filme.genero}</p>
-      <p><strong>Ano:</strong> {filme.anos}</p> 
+      <p><strong>Ano:</strong> {filme.ano}</p> 
 
 
 
